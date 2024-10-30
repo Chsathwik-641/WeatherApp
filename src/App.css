@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Playwrite+DE+Grund:wght@100..400&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.input {
+  display: flex;
+  border: 1px solid black;
+  border-radius: 40px;
+  overflow: hidden;
+  width: 100%;
+  max-width: 500px;
+}
+
+.input input {
+  flex-grow: 1;
+  border: none;
+  padding: 10px;
+  outline: none;
+  border-radius: 40px 0 0 40px;
+}
+
+.input button {
+  background-color: #1d4ed8;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 0 40px 40px 0;
+  cursor: pointer;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.img {
+  width: 40px;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.weather-icon {
+  max-width: 60px;
+}
+@media (max-width: 768px) {
+  /* Adjust main container padding and margin */
+  .p-10 {
+    padding: 1rem;
+  }
+
+  .m-16 {
+    margin: 1rem;
+  }
+
+  .m-15 {
+    margin: 0.5rem;
+  }
+
+  /* Resize heading font */
+  .text-4xl {
+    font-size: 1.5rem;
+  }
+
+  /* Adjust custom scrollbar for responsive */
+  .custom-scrollbar {
+    max-height: 300px;
+  }
+
+  /* Layout adjustments for smaller screens */
+  .flex-grid {
+    display: block;
+    width: 100%;
+  }
+
+  .flex {
+    display: block;
+    width: 100%;
+  }
+
+  /* Adjust button size for smaller screens */
+  .input button {
+    padding: 8px 12px;
+  }
+} /* Close the media query block */
+
+@media (max-width: 480px) {
+  /* Further reduce font size */
+  .text-4xl {
+    font-size: 1.25rem;
+  }
+
+  .text-lg {
+    font-size: 1rem;
+  }
+
+  /* Make search bar full width */
+  .input {
+    width: 100%;
+  }
+
+  /* Responsive layout for cards */
+  .p-4 {
+    padding: 0.5rem;
+  }
+
+  /* Weather icons and container adjustments */
+  .weather-icon {
+    max-width: 40px;
+  }
+}
