@@ -8,7 +8,7 @@ import {
 } from "@heroicons/react/24/outline";
 import "./App.css";
 
-const weatherKey = "3c4183720e3642d29e4133418242510";
+const weatherKey = "d05b80a010b245f58af62225240511";
 const openWeatherKey = "aa83e44fed66fcea8d5ffb46e9645fb6";
 const weatherBaseUrl = "https://api.weatherapi.com/v1/";
 const openWeatherBaseUrl = "https://api.openweathermap.org/data/2.5/";
